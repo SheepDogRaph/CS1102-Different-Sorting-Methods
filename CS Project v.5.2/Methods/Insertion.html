@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting method</title>
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="style.css">
+        <!-- JQery Link-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- JS Link -->
+        <script src="script.js"></script>
+        <!-- FontAwesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- Bootstrap Link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      
+     
+    </head>
+
+    <body>
+    <div class="container-all">
+        <!-- 左 -->
+        <div class="container-left">
+
+            <!-- 导览 -->
+            <nav id="sidebar">
+
+                <!-- 显示/隐藏 按钮-->
+                <button type="button" id="collapse" class="collapse-btn">
+
+                    <!-- 样式 -->
+                    <i class="fa-solid fa-align-left"></i>
+                </button>
+
+                <!-- List -->
+                <ul class="List-unstyled">
+                    <p>Sorting Method</p>
+
+                    <li>
+                        <a href="../index.html"> Home  </a>
+                    </li>
+                    <li>
+                        <a href="../intro.html">Introduction </a>
+                    </li>
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown">Methods 
+                            
+                            <i class="fa-solid fa-angle-down"></i></a>
+                            
+                        <!-- 子导览列 -->
+                        <ul id="sublist" class="List-unstyled collapse">
+                            <li>
+                                <a href="Bucket.html">Bucket sort </a>
+                            </li>
+                            <li>
+                                <a href="Bubble.html">Bubble sort </a>
+                            </li>
+                            <li>
+                                <a href="Selection.html">Selection sort</a>
+                            </li>
+                            <li>
+                                <a href="Insertion.html">Insertion sort  </a>
+                            </li>
+                            <li>
+                                <a href="Quick.html">Quick sort  </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="../Comparison.html">Comparison  </a>
+                    </li>
+                    <li>
+                        <a href="../Conclusion.html">Our Discovery </a>
+                    </li>
+                    <li>
+                        <a href="../Reflection.html">Reflection</a>
+                    </li>
+                    <li>
+                        <a href="../Reference.html">Reference</a>
+                    </li>
+
+                </ul>
+
+
+
+            </nav>
+        </div>
+
+        <!-- 右 -->
+        <div class="container-right">
+            <div class="container-fluid">
+                <!-- 标题 -->
+                <h1>Insertion Sort</h1>
+                <br />
+                <img src="InsertionSort.gif" alt=“Insertion Sort">
+                <br />
+                <p class="body">
+                <br />
+                <b>Insertion sort</b> is a direct grouping method that repeatedly puts the respective items(such as numbers ) of an unsorted list into the accurate order in a sorted portion of the list until it is correct in order. The number of the inputs are equal to the output.
+                </p>
+                <p class="body"><u>The basic steps of the insertion sort algorithm are as follows:</u></br>Assume the first number is a, the second is b, the third is c, and the fourth is d…
+                </p>
+                <p class="body">Given that the insertion sort has two parts: sorted array(for the first number) and unsorted array(for the other number).
+                </p>
+                <ol class="body">
+                    
+                    <li>The comparison between a and b in the list.</li> If the b is less than a, then replace it with a.</li>
+                    <li>Comparing c,b, a, and exchanging the position between a,b, and c in the correct order(ascending or descending order based on the requirement) by comparing c to b,b to a.</li>
+                    <li>Repeat the steps by comparing a,b,c, and d, and exchange the order correctly based on ascending order or descending order based on the requirement.
+                    </li>
+                    <li>Repeat until all numbers are grouped.</li>
+                </ol>
+                <p class="body"><b>Advantages:</b></p>
+                <ul class="body">
+                    <li>Simplicity in a small amount of data: If the number of data is 100, insertion sort needs 0.003 which is the second least among these five sorting methods.</li>
+                    <li>Easy to apply: Comparing the number with the previous order of the number.</li>
+                    <li>Sort-stable: The number of the inputs are equal to the output.</li>
+                    <li>Space-efficient: The space complexity of insertion sort is O(1).</li>
+                </ul>
+                <p class="body"><b>Disadvantages:</b></p>
+                <ul class="body">
+                    <li>Low efficiency in ordering larger sample size: If the number of the data is 10000, insertion sort needs to use almost 100 seconds to complete while quick sort might only need 0.4 seconds to complete.
+                    </li> 
+                    <li>The time usage is lower than quicksort: The time complexity of insertion sort is O(n) for the best cases while the quick sort is O(nlogn). The time complexity of insertion Sort is O(n²) for the worst and average cases, where ’n’ means the number of data in the list.</li> 
+                </ul>
+                <p class="body">Code:
+                    <br />
+                    <img src="insertion sort.jpg" height=600 width=650 alt="insertion sort">
+                </p>
+                <p class="requirement">CS1102 - Course Project - 2023/2024 Semester B <br> Tui Pui Yan, XU Siyi, Qi Yufei, Wang Shichao </p>
+            </div>
+
+            
+        </div>
+ 
+    </div>   
+
+    </body>
+</html>

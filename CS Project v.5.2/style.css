@@ -1,0 +1,120 @@
+.container-all{
+    display:flex;
+    align-items: stretch;
+}
+
+#sidebar{
+    width: 250px;
+    height:200vh;
+    background-color: black;
+    color:white;
+    transition: 1s;
+}
+
+#sidebar.active{
+    margin-left: -210px;
+}
+
+
+ul{
+    margin: 0;
+   
+}
+
+/* 整理右边标题的格式 */
+.container-right{
+    background-color: lavender;
+    width: 100%;
+    height: 200vh;   
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    
+}
+.headline{   
+    margin-top: 100px; 
+    text-shadow: 2px 2px 1px rgb(48, 44, 44);
+    font-size:50px; 
+    margin-bottom: 50px; 
+}
+
+.gen{
+    margin-top: 5px;
+}
+.names{    
+    font-family: 'Times New Roman', Times, serif;   
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.requirement{
+    position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        font-style: italic;
+    }
+    body, html {
+        height: 200vh;
+        margin: 0;
+}
+
+.body{
+    text-align: left;
+}
+
+.homehead{
+    
+}
+
+.collapse-btn{
+    position:relative;
+    top: 2%;
+    left: 210px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding-left: 8px;
+    border-radius: 3px;
+}
+
+.collapse-btn:hover{
+    background-color: white;
+    color:black;
+    transition: 0.25s;
+}
+
+#sidebar p{
+    text-align: Left;
+    font-size: 24px;
+    padding-top: 20px;  
+    font-weight: bold;
+    /* 如何去除前面的点？ */
+    
+   
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    color: rgb(197, 192, 192);
+    text-decoration: none;
+   
+}
+
+#sidebar ul li a:hover {
+    color: black;
+    background: #fff;
+}
+
+.fa-solid {
+    padding-left:4px
+}
+
+ul ul li a{
+    /* 子栏格式 */
+}
+

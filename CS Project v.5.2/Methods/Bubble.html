@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting method</title>
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="style.css">
+        <!-- JQery Link-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- JS Link -->
+        <script src="script.js"></script>
+        <!-- FontAwesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- Bootstrap Link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      
+     
+    </head>
+
+    <body>
+    <div class="container-all">
+        <!-- 左 -->
+        <div class="container-left">
+
+            <!-- 导览 -->
+            <nav id="sidebar">
+
+                <!-- 显示/隐藏 按钮-->
+                <button type="button" id="collapse" class="collapse-btn">
+
+                    <!-- 样式 -->
+                    <i class="fa-solid fa-align-left"></i>
+                </button>
+
+                <!-- List -->
+                <ul class="List-unstyled">
+                    <p>Sorting Method</p>
+
+                    <li>
+                        <a href="../index.html"> Home  </a>
+                    </li>
+                    <li>
+                        <a href="../intro.html">Introduction </a>
+                    </li>
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown">Methods 
+                            
+                            <i class="fa-solid fa-angle-down"></i></a>
+                            
+                        <!-- 子导览列 -->
+                        <ul id="sublist" class="List-unstyled collapse">
+                            <li>
+                                <a href="Bucket.html">Bucket sort </a>
+                            </li>
+                            <li>
+                                <a href="Bubble.html">Bubble sort </a>
+                            </li>
+                            <li>
+                                <a href="Selection.html">Selection sort</a>
+                            </li>
+                            <li>
+                                <a href="Insertion.html">Insertion sort  </a>
+                            </li>
+                            <li>
+                                <a href="Quick.html">Quick sort  </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="../Comparison.html">Comparison  </a>
+                    </li>
+                    <li>
+                        <a href="../Conclusion.html">Our Discovery </a>
+                    </li>
+                    <li>
+                        <a href="../Reflection.html">Reflection</a>
+                    </li>
+                    <li>
+                        <a href="../Reference.html">Reference</a>
+                    </li>
+
+                </ul>
+
+
+
+            </nav>
+        </div>
+
+        <!-- 右 -->
+        <div class="container-right">
+            <div class="container-fluid">
+                <!-- 标题 -->
+                <h1>Bubble Sort</h1>
+                <br />
+                <img src="BubbleSort.gif" alt=“Bubble Sort">
+                <br />
+                <p class="body">
+                <br />
+                <b>Bubble sort</b> is an algorithm for sorting a list by iteratively comparing and swapping adjacent elements if they are in the incorrect order. This process continues until the entire list is arranged in the correct order. 
+                </p>
+                <p class="body"><u>The basic steps of the bubble sort algorithm are as follows:</u></p>
+                <ol class="body">
+                    <li>There is an initial unsorted array.</li>
+                    <li>Compare each pair of adjacent elements.</li>
+                    <li>Swap the elements if they are in the wrong order; otherwise, keep them the same.</li>
+                    <li>Move to the next pair of elements and repeat the steps above.</li>
+                    <li>End the sorting action when the corrected order list is obtained.
+                    </li>
+                </ol>
+                <p class="body"><b>Advantages:</b></p>
+                <ul class="body">
+                    <li>Efficient when Data is ‘Nicely’ Distributed<br />
+                        The best-case time complexity of the algorithm is O(n), where no swapping is required. This situation will happen when the list is already in a sorted state or very close to being sorted.</li>
+                    <li>Space Efficiency:<br />
+                        Since bubble sort works in space, it does not need extra memory for variable storing and element swapping. 
+                    </li>
+                </ul>
+                <p class="body"><b>Disadvantages:</b></p>
+                <ul class="body">
+                    <li>Dependent on Distribution:<br />
+                        Selection sort is when there are many non-uniform elements. The worst-case and average-case time complexity of the algorithm is O(n2) when the list is in completely reverse order. In such cases, a significant number of swapping actions are required due to the large number of elements involved.
+                    </li>
+                    <li>Slow performance:<br />
+                        It takes a long time to finish sorting if there are many non-uniform elements. You can perceive the performance time from the animation
+                    </li>
+                </ul>
+                <p class="body">Code:
+                <br />
+                <img src="bubble sort.jpg" height=600 width=650 alt=“bubble sort">
+                </p>
+                <p class="requirement">CS1102 - Course Project - 2023/2024 Semester B <br> Tui Pui Yan, XU Siyi, Qi Yufei, Wang Shichao</p>
+            </div>
+
+            
+        </div>
+ 
+    </div>   
+
+    </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting method</title>
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="style.css">
+        <!-- JQery Link-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- JS Link -->
+        <script src="script.js"></script>
+        <!-- FontAwesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- Bootstrap Link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <script>
+            let numbers = [];
+            
+            function generateRandomNumbers() {
+                numbers = []; 
+                for (let i = 0; i < 10; i++) {
+                    numbers.push(Math.floor(Math.random() * 100)); 
+                }
+                document.getElementById("randomNumbers").textContent = numbers.join(", ");
+            }
+            
+            function insertionSort(inputArray) {
+                if (inputArray.length < 2) return inputArray;
+                for (let i = 1; i < inputArray.length; i++) {
+                    let temp = inputArray[i];
+                    let j;
+                    for (j = i - 1; j >= 0 && inputArray[j] > temp; j--) {
+                        inputArray[j + 1] = inputArray[j];
+                    }
+                    inputArray[j + 1] = temp;
+                }
+                return inputArray;
+            }
+            
+            function sortAndDisplay() {
+                let sortedArray = insertionSort(numbers.slice()); 
+                document.getElementById("sorted").textContent = sortedArray.join(", ");
+            }
+        </script>
+      
+     
+    </head>
+
+    <body>
+    <div class="container-all">
+        <!-- 左 -->
+        <div class="container-left">
+
+            <!-- 导览 -->
+            <nav id="sidebar">
+
+                <!-- 显示/隐藏 按钮-->
+                <button type="button" id="collapse" class="collapse-btn">
+
+                    <!-- 样式 -->
+                    <i class="fa-solid fa-align-left"></i>
+                </button>
+
+                <!-- List -->
+                <ul class="List-unstyled">
+                    <p>Sorting Method</p>
+
+                    <li>
+                        <a href="index.html">Home  </a>
+                    </li>
+                    <li>
+                        <a href="intro.html">Introduction </a>
+                    </li>
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown">Methods 
+                            
+                            <i class="fa-solid fa-angle-down"></i></a>
+                            
+                        <!-- 子导览列 -->
+                        <ul id="sublist" class="List-unstyled collapse">
+                            <li>
+                                <a href="Methods/Bucket.html">Bucket sort </a>
+                            </li>
+                            <li>
+                                <a href="Methods/Bubble.html">Bubble sort </a>
+                            </li>
+                            <li>
+                                <a href="Methods/Selection.html">Selection sort</a>
+                            </li>
+                            <li>
+                                <a href="Methods/Insertion.html">Insertion sort  </a>
+                            </li>
+                            <li>
+                                <a href="Methods/Quick.html">Quick sort  </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="Comparison.html">Comparison  </a>
+                    </li>
+                   
+                    <li>
+                        <a href="Conclusion.html">Our Discovery </a>
+                    </li>
+                    <li>
+                        <a href="Reflection.html">Reflection</a>
+                    </li>
+                    <li>
+                        <a href="Reference.html">Reference</a>
+                    </li>
+
+                </ul>
+
+
+
+            </nav>
+        </div>
+
+        <!-- 右 -->
+        <div class="container-right">
+            <div class="container-fluid-index">
+                <!-- 标题 -->
+                
+                <h1 class="headline">Sorting Methods</h1>
+
+                <button onclick="generateRandomNumbers()">Generate 10 Random Numbers</button>
+                <p id="randomNumbers"></p>
+                <button onclick="sortAndDisplay()">Insertion Sort</button>
+                <p id="sorted"></p>
+
+                <p class="names">
+                    Wang Shichao 56690529<br>
+                    XU Siyi 57841174<br>
+                    Qi Yufei 58521613<br>
+                    Tui Pui Yan 57846803
+                </p>
+
+                <p>Techniques:<br>
+                    HTML, CSS, Javascript</p>
+
+                <p class="requirement">CS1102 - Course Project - 2023/2024 Semester B <br> Tui Pui Yan, XU Siyi, Qi Yufei, Wang Shichao </p>
+              
+
+            </div>
+
+            
+        </div>
+ 
+    </div>   
+
+    </body>
+</html>
